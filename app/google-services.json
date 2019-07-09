@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "605444754736",
+    "firebase_url": "https://shop-64a0e.firebaseio.com",
+    "project_id": "shop-64a0e",
+    "storage_bucket": "shop-64a0e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605444754736:android:ac2d0e2bc3695302",
+        "android_client_info": {
+          "package_name": "com.alent.shop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605444754736-ckc08e9tlebos7ilj3t8fvt69phit1jq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alent.shop",
+            "certificate_hash": "dc601c584bc3949786ebb6ba4ffd6a51a6e713f5"
+          }
+        },
+        {
+          "client_id": "605444754736-9mvunndvpdqgjgt28ukd2mgnll12eqr4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzP2e375RVgLEQUTqDbkw8Svho90NdQr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605444754736-9mvunndvpdqgjgt28ukd2mgnll12eqr4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
