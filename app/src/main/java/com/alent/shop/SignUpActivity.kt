@@ -31,7 +31,7 @@ class SignUpActivity : AppCompatActivity() {
                             .show()
                     } else {
                         AlertDialog.Builder(this)
-                            .setTitle("Sign Uo")
+                            .setTitle("Sign Up")
                             .setMessage(it.exception?.message)
                             .setPositiveButton("OK", null)
                             .show()

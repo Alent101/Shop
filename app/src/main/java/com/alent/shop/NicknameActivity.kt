@@ -4,7 +4,10 @@ import android.app.Activity
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_nickname.*
+import kotlinx.android.synthetic.main.content_main.*
 
 class NicknameActivity : AppCompatActivity() {
 
@@ -13,10 +16,13 @@ class NicknameActivity : AppCompatActivity() {
         setContentView(R.layout.activity_nickname)
 
         btn_done.setOnClickListener {
-            getSharedPreferences("shop", Context.MODE_PRIVATE)
-                .edit()
-                .putString("NICKNAME", ed_nick.text.toString())
-                .apply()
+            setNickname(ed_nickname.text.toString())
+            //Firebase realtime database
+            FirebaseDatabase.getInstance()
+                .getReference("users")
+                .child(FirebaseAuth.getInstance().currentUser!!.uid)
+                .child("nickname")
+                .setValue(ed_nickname.text.toString())
             setResult(Activity.RESULT_OK)
             finish()
         }
